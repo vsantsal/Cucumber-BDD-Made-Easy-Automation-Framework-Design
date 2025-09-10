@@ -11,7 +11,7 @@ public class EbayHome_Elements {
 	
 	WebDriver driver;
 
-	@FindBy(linkText = "Advanced") public WebElement advancedLink;
+	@FindBy(linkText = "Avançada") public WebElement advancedLink;
 	@FindBy(xpath = "//input[@id='gh-ac']") public WebElement searchBox;
 	@FindBy(xpath = "//input[@id='gh-btn']") public WebElement searchButton;
 	@FindBy(css = "h1.srp-controls__count-heading>span.BOLD:first-child") public WebElement numOfItems;
