@@ -23,8 +23,8 @@ public class EbayHome_Steps {
 		this.ebayhome_actions = ebayhome_actions;
 	}
 	
-	@Given("I am on Eaby Home Page")
-	public void i_am_on_Eaby_Home_Page() {
+	@Given("I am on Ebay Home Page")
+	public void i_am_on_Ebay_Home_Page() {
 	   common_actions.goToUrl("https://www.ebay.com/");
 	}
 
