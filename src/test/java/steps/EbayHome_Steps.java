@@ -2,15 +2,15 @@ package steps;
 
 import static org.junit.Assert.fail;
 
-import java.util.List;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.Entao;
+import io.cucumber.java.pt.Quando;
 
 import actions.Common_Actions;
 import actions.EbayHome_Actions;
-import io.cucumber.java.en.Given;
+
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -23,17 +23,17 @@ public class EbayHome_Steps {
 		this.ebayhome_actions = ebayhome_actions;
 	}
 	
-	@Given("I am on Ebay Home Page")
+	@Dado("Estou na Home Page do Ebay")
 	public void i_am_on_Ebay_Home_Page() {
 	   common_actions.goToUrl("https://www.ebay.com/");
 	}
 
-	@When("I click on Advanced Link")
+	@Quando("Eu clico na Pesquisa Avançada")
 	public void i_click_on_Advanced_Link() {
 	    ebayhome_actions.clickAdvancedLink();
 	}
 
-	@Then("I navigate to Advanced Search page")
+	@Entao("Eu navego para a página de Pesquisa Avançada")
 	public void i_navigate_to_Advanced_Search_page() {
 	    String expUrl = "https://www.ebay.com/sch/ebayadvsearch";
 	    String actUrl = common_actions.getCurrentPageUrl();

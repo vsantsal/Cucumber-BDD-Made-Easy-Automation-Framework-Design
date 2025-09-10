@@ -1,10 +1,12 @@
-Feature: Ebay Home Page Scenarios
+# language: pt
+
+Funcionalidade: Cenários da Home Page do Ebay
 
   @P1 @P2
-  Scenario: Advanced Search Link
-    Given I am on Ebay Home Page
-    When I click on Advanced Link
-    Then I navigate to Advanced Search page
+  Cenario: Link de Pesquisa Avançada
+    Dado Estou na Home Page do Ebay
+    Quando Eu clico na Pesquisa Avançada
+    Entao Eu navego para a página de Pesquisa Avançada
 
 #  @P1 @setCookies @Test
 #  Scenario: Seach items count
