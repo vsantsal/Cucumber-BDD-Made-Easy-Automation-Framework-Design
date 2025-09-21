@@ -13,7 +13,7 @@ public class EbayHome_Elements {
 
 	@FindBy(linkText = "Avançada") public WebElement advancedLink;
 	@FindBy(xpath = "//input[@id='gh-ac']") public WebElement searchBox;
-	@FindBy(xpath = "//input[@id='gh-btn']") public WebElement searchButton;
+	@FindBy(xpath = "//button[@id='gh-search-btn']") public WebElement searchButton;
 	@FindBy(css = "h1.srp-controls__count-heading>span.BOLD:first-child") public WebElement numOfItems;
 	@FindBy(xpath = "//select[@id='gh-cat']/option']") public List<WebElement> catOptions;
 	
