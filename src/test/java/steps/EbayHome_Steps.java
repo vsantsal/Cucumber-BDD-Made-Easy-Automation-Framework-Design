@@ -24,17 +24,17 @@ public class EbayHome_Steps {
 	}
 	
 	@Dado("Estou na Home Page do Ebay")
-	public void i_am_on_Ebay_Home_Page() {
+	public void estouNaHomePageDoEbay() {
 	   common_actions.goToUrl("https://www.ebay.com/");
 	}
 
 	@Quando("Eu clico na Pesquisa Avançada")
-	public void i_click_on_Advanced_Link() {
+	public void euClicoNaPesquisaAvancada() {
 	    ebayhome_actions.clickAdvancedLink();
 	}
 
 	@Entao("Eu navego para a página de Pesquisa Avançada")
-	public void i_navigate_to_Advanced_Search_page() {
+	public void euNavegoParaAPaginaDePesquisaAvancada() {
 	    String expUrl = "https://www.ebay.com/sch/ebayadvsearch";
 	    String actUrl = common_actions.getCurrentPageUrl();
 	    if (!expUrl.equals(actUrl)) {
