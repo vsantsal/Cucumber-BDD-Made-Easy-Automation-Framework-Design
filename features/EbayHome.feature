@@ -4,16 +4,16 @@ Funcionalidade: Cenários da Home Page do Ebay
 
   @P1 @P2
   Cenario: Link de Pesquisa Avançada
-    Dado Estou na Home Page do Ebay
+    Dado Estou na Home Page da Ebay
     Quando Eu clico na Pesquisa Avançada
     Entao Eu navego para a página de Pesquisa Avançada
 
-#  @P1 @setCookies @Test
-#  Scenario: Seach items count
-#    Given I am on Ebay Home Page
-#    When I serach for 'iPhone 11'
-#    Then I validate atleast 1000 search items present
-#
+  @P1 @setCookies @Test
+  Cenario: Contagem de itens pesquisados
+    Dado Estou na Home Page da Ebay
+    Quando Pesquiso por 'iPhone 11'
+    Entao Valido que pelo menos 1000 itens foram encontrados
+
 #  @P24 @setCookies
 #  Scenario: Seach items count2
 #    Given I am on Ebay Home Page
