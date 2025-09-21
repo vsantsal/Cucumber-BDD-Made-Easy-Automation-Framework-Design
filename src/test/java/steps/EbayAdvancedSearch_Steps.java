@@ -1,15 +1,14 @@
 package steps;
 
-import static org.junit.Assert.fail; 
-
-import org.openqa.selenium.WebDriver;
+import static org.junit.Assert.fail;
 
 import actions.Common_Actions;
 import actions.EbayAdvancedSearch_Actions;
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.Entao;
+import io.cucumber.java.pt.Quando;
+
 
 public class EbayAdvancedSearch_Steps {
 	Common_Actions common_actions;
@@ -20,26 +19,26 @@ public class EbayAdvancedSearch_Steps {
 		this.ebayadvancedsearch_actions = ebayadvancedsearch_actions;
 	}
 	
-	@Given("I am Ebay Advanced Search Page")
-	public void i_am_Ebay_Advanced_Search_Page() throws InterruptedException {
+	@Dado("Estou na página de pesquisa avançada")
+	public void estouNaPaginaDePesquisaAvancada() throws InterruptedException {
 		common_actions.goToUrl("https://www.ebay.com/sch/ebayadvsearch");
 	}
 
-	@When("I click on Ebay Logo")
-	public void i_click_on_Ebay_Logo() {
+	@Quando("Clico na logo da Ebay")
+	public void clicoNaLogoDaEbay() {
 		ebayadvancedsearch_actions.clickOnEbayLogo();
 	}
 
-	@Then("I am navigated to Ebay Home Page")
-	public void i_am_navigated_to_Ebay_Home_Page() {
+	@Entao("Navego para a página inicial da Ebay")
+	public void navegoParaInicialDaEbay() {
 	    String expUrl = "https://www.ebay.com/";
 	    String actUrl = common_actions.getCurrentPageUrl();
 	    if (!expUrl.equals(actUrl)) {
-	    	fail("Page does not naviage to home page");
+	    	fail("Página navegada '" + actUrl + "' não corresponde à esperada: '" + expUrl + "'");
 	    }
 	}
 	
-	@When("I advanced search an item")
+	@Quando("I advanced search an item")
 	public void i_advanced_search_an_item(DataTable dataTable) throws Exception {
 		ebayadvancedsearch_actions.enterSearchString(dataTable.cell(1, 0));
 		ebayadvancedsearch_actions.enterExcludeString(dataTable.cell(1, 1));
