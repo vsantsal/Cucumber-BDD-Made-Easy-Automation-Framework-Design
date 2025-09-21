@@ -38,7 +38,7 @@ public class EbayHome_Steps {
 	    String expUrl = "https://www.ebay.com/sch/ebayadvsearch";
 	    String actUrl = common_actions.getCurrentPageUrl();
 	    if (!expUrl.equals(actUrl)) {
-	    	fail("Page does not navigae to expected page");
+	    	fail("Página navegada '" + actUrl + "' não corresponde à esperada: '" + expUrl + "'");
 	    }
 	}
 	
