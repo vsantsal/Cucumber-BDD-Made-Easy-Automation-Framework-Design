@@ -33,7 +33,7 @@ public class EbayHome_Actions {
 	
 	public int getSeatchItemsCount() {
 		String itemCount = ebayhome_elements.numOfItems.getText().trim();	
-		String itemCount2 = itemCount.replace(",", "");
+		String itemCount2 = itemCount.replaceAll("[,|.]", "");
 	    int itemCountInt = Integer.parseInt(itemCount2);
 	    return itemCountInt;
 	}
