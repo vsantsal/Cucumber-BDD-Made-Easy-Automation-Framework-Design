@@ -2,18 +2,17 @@ package actions;
 
 import org.openqa.selenium.WebDriver;
 
-import elements.EabyAdvancedSearch_Elements;
-import elements.EbayHome_Elements;
+import elements.EbayAdvancedSearch_Elements;
 import steps.Common_Steps;
 
 public class EbayAdvancedSearch_Actions {
 	
 	private WebDriver driver;
-	EabyAdvancedSearch_Elements ebayadvancedsearch_elements;
+	EbayAdvancedSearch_Elements ebayadvancedsearch_elements;
 	
 	public EbayAdvancedSearch_Actions(Common_Steps common_steps) {
 		this.driver = common_steps.getDriver();
-		ebayadvancedsearch_elements = new 	EabyAdvancedSearch_Elements(driver);
+		ebayadvancedsearch_elements = new EbayAdvancedSearch_Elements(driver);
 	}
 	
 	public void clickOnEbayLogo() {
