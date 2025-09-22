@@ -14,12 +14,12 @@ Funcionalidade: Cenários da Home Page do Ebay
     Quando Pesquiso por 'iPhone 11'
     Entao Valido que pelo menos 1000 itens foram encontrados
 
-#  @P24 @setCookies
-#  Scenario: Seach items count2
-#    Given I am on Ebay Home Page
-#    When I serach for 'Toy Cars'
-#    Then I validate atleast 100 search items present
-#
+  @P24 @setCookies
+  Cenario: Contagem de itens pesquisados - segundo item
+    Dado Estou na Home Page da Ebay
+    Quando Pesquiso por 'Toy Cars'
+    Entao Valido que pelo menos 100 itens foram encontrados
+
 #  @P240 @setCookies
 #  Scenario: Search an item in category
 #    Given I am on Ebay Home Page
