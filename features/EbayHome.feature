@@ -20,12 +20,12 @@ Funcionalidade: Cenários da Home Page do Ebay
     Quando Pesquiso por 'Toy Cars'
     Entao Valido que pelo menos 100 itens foram encontrados
 
-#  @P240 @setCookies
-#  Scenario: Search an item in category
-#    Given I am on Ebay Home Page
-#    When I serach for 'soap' in 'BaBy' category
-#    Then I validate atleast 50 search items present
-#
+  @P240 @setCookies
+  Cenario:  Pesquisa item em categoria específica
+    Dado Estou na Home Page da Ebay
+    Quando Pesquiso por 'sopa' na categoria 'Bebê'
+    Entao Valido que pelo menos 50 itens foram encontrados
+
 #	@P500
 #  Scenario Outline: Home page links
 #    Given I am on Ebay Home Page

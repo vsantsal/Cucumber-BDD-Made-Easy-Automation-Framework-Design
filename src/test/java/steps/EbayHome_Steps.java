@@ -53,14 +53,14 @@ public class EbayHome_Steps {
 	    }
 	}
 	
-//	@When("I serach for {string} in {string} category")
-//	public void i_serach_for_in_category(String string, String string2) throws Exception {
-//		ebayhome_actions.searchAnItem(string);
-//		ebayhome_actions.selectCategoryOption(string2);
-//		ebayhome_actions.clickSearchButton();
-//		Thread.sleep(1000);
-//	}
-//
+	@Quando("Pesquiso por {string} na categoria {string}")
+	public void pesquisoPorNaCategoria(String item, String categoria) throws Exception {
+		ebayhome_actions.searchAnItem(item);
+		ebayhome_actions.selectCategoryOption(categoria);
+		ebayhome_actions.clickSearchButton();
+		Thread.sleep(1000);
+	}
+
 //	@When("I click on {string}")
 //	public void i_click_on(String string) throws Exception {
 //	   ebayhome_actions.clickOnLinkByText(string);
