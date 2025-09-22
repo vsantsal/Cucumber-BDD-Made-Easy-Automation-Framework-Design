@@ -15,7 +15,7 @@ public class EbayHome_Elements {
 	@FindBy(xpath = "//input[@id='gh-ac']") public WebElement searchBox;
 	@FindBy(xpath = "//button[@id='gh-search-btn']") public WebElement searchButton;
 	@FindBy(css = "h1.srp-controls__count-heading>span.BOLD:first-child") public WebElement numOfItems;
-	@FindBy(xpath = "//select[@id='gh-cat']/option']") public List<WebElement> catOptions;
+	@FindBy(xpath = "//select[@id='gh-cat']/option") public List<WebElement> catOptions;
 	
 	public EbayHome_Elements(WebDriver driver) {
 		this.driver = driver;
