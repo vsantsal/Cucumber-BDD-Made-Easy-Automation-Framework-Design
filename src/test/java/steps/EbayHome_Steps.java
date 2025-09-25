@@ -61,21 +61,21 @@ public class EbayHome_Steps {
 		Thread.sleep(1000);
 	}
 
-//	@When("I click on {string}")
-//	public void i_click_on(String string) throws Exception {
-//	   ebayhome_actions.clickOnLinkByText(string);
-//	   Thread.sleep(1000);
-//	}
-//
-//	@Then("I validate that page navigates to {string} and title contains {string}")
-//	public void i_validate_that_page_navigates_to_and_title_contains(String url, String title) {
-//	    String actUrl = common_actions.getCurrentPageUrl();
-//	    String actTitle = common_actions.getCurrentPageTitle();
-//	    if (!actUrl.equals(url)) {
-//	    	fail("Page does navigate to expected url: " + url);
-//	    }
-//	    if (!actTitle.contains(title)) {
-//	    	fail("Title mismatch");
-//	    }
-//	}
+	@Quando("Eu clico em {string}")
+	public void euClicoEm(String string) throws Exception {
+	   ebayhome_actions.clickOnLinkByText(string);
+	   Thread.sleep(1000);
+	}
+
+	@Entao("Eu valido que a página navega para {string} e seu título contém {string}")
+	public void i_validate_that_page_navigates_to_and_title_contains(String url, String title) {
+	    String actUrl = common_actions.getCurrentPageUrl();
+	    String actTitle = common_actions.getCurrentPageTitle();
+	    if (!actUrl.equals(url)) {
+	    	fail("Página não foi direcionada para a url esperada: " + url);
+	    }
+	    if (!actTitle.contains(title)) {
+	    	fail("Título não corresponde ao esperado");
+	    }
+	}
 }
