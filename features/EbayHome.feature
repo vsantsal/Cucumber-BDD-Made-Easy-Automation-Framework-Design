@@ -26,7 +26,7 @@ Funcionalidade: Cenários da Home Page do Ebay
     Quando Pesquiso por 'sopa' na categoria 'Bebê'
     Entao Valido que pelo menos 50 itens foram encontrados
 
-#	@P500
+  @P500
   Delineacao do Cenario: Links da página inicial
     Dado Estou na Home Page da Ebay
     Quando Eu clico em '<link>'

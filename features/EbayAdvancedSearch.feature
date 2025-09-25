@@ -8,7 +8,7 @@ Funcionalidade: Página de pesquisa avançada da Ebay
     Quando Clico na logo da Ebay
     Entao Navego para a página inicial da Ebay
 
-#	@P300 @setCookies
+  @P300 @setCookies
   Cenario: Pesquisa avançada de um item
     Dado Estou na página de pesquisa avançada
     Quando Eu faço pesquisa avançada de um item
