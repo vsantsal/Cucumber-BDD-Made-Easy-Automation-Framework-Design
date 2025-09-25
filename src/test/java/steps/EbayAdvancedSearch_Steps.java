@@ -38,8 +38,8 @@ public class EbayAdvancedSearch_Steps {
 	    }
 	}
 	
-	@Quando("I advanced search an item")
-	public void i_advanced_search_an_item(DataTable dataTable) throws Exception {
+	@Quando("Eu faço pesquisa avançada de um item")
+	public void euFacoPesquisaAvancadaDeUmItem(DataTable dataTable) throws Exception {
 		ebayadvancedsearch_actions.enterSearchString(dataTable.cell(1, 0));
 		ebayadvancedsearch_actions.enterExcludeString(dataTable.cell(1, 1));
 		ebayadvancedsearch_actions.enterMinPrice(dataTable.cell(1, 2));
